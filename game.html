@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-1">
-                    <a href="#back">Back</a>
+                    <a href="index.html">Back</a>
                 </div>
                 <div class="col">
                     <p>Rock Paper Scissor</p>
@@ -27,18 +27,19 @@
         <div class="container game">
             <div class="row d-flex justify-content-center align-items-center ">
                 <div class="col-md-2">
-                    <a href="#player-choose-a"><img src="./assets/batu.png" alt="batu"></a>
-                    <a href="#player-choose-b"><img src="./assets/gunting.png" alt="batu"></a>
-                    <a href="#player-choose-c"><img src="./assets/kertas.png" alt="batu"></a>
+                    <img src="./assets/batu.png" alt="batu" class="batu">
+                    <img src="./assets/gunting.png" alt="batu" class="gunting">
+                    <img src="./assets/kertas.png" alt="batu" class="kertas">
 
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="h1">VS</div>
+                    <div class="result"></div>
+                    <div class="refresh"><a href="game.html">refresh</a></div>
                 </div>
                 <div class="col-md-2">
-                    <a href="#com-choose-1"><img src="./assets/batu.png" alt="batu"></a>
-                    <a href="#com-choose-2"><img src="./assets/gunting.png" alt="batu"></a>
-                    <a href="#com-choose-3"><img src="./assets/kertas.png" alt="batu"></a>
+                    <img src="./assets/batu.png" alt="batu">
+                    <img src="./assets/gunting.png" alt="batu">
+                    <img src="./assets/kertas.png" alt="batu">
                 </div>
             </div>
 
@@ -47,7 +48,9 @@
 
 
 
+    <script src="./controller.js">
 
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
