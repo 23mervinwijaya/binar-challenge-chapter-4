@@ -1,22 +1,12 @@
 
 body{
     background-color: antiquewhite;
-    padding : 50px
+    padding : 30px
 }
 
-.nav{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.headnav{
+    padding: 10px;
 }
-
-.game{
-    padding-top:50px;
-    padding-bottom: 50px;
-    width: 100vh;
-}
-
-
-
 
 a{
     text-decoration: none;
@@ -51,4 +41,17 @@ img:hover{
     font-size: 30px;
     padding: 5px;
     color: white;
+}
+.index img{
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    width: 720px;
+}
+.index img:hover{
+    background-color: unset;
+}
+.index{
+    padding-top: 5%;
+    padding-bottom:5% ;
 }
