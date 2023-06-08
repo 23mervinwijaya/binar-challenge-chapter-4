@@ -8,16 +8,13 @@ body{
 
 
 /* Desktop */
-@media only screen and (min-width: 600px) {    
+@media only screen and (min-width: 601px) {    
    
 .container{
     width: 90vw;
     height: 80vh;
     padding: 20px 50px 20px 50px;
 }
-
-
-
 
 
 /* Index Page */
@@ -45,10 +42,6 @@ a{
     color: white;
     transition: 0.2s;
 }
-}
-
-
-
 
 /* Game Page */
 
@@ -118,74 +111,119 @@ a{
     background-color: rgba(173, 173, 173, 0.541);
     border-radius: 25px;
 }
+}
 
 /* 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.headnav{
-    padding: 10px;
+/* Desktop */
+@media only screen and (max-width: 600px) {    
+   
+.container{
+    width: 400px;
+    height: auto;
+    padding: 20px;
 }
 
+/* Index Page */
+
+.front-logo{
+    margin-top: 30%;
+    text-align: center;
+}
+.front-logo img{
+    height: 10rem;
+}
 a{
     text-decoration: none;
-    color : black
 }
-a:hover{
-    color: rgb(54, 54, 54);
+.button{
+    background-color: white;
+    font-size: larger;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
 }
-
-
-img{
-    width: 150px;
-    height: 150px;
-    padding: 20px;
-    margin: 10px;
-}
-
-img:hover{
-    background-color: rgba(173, 173, 173, 0.541);
-    border-radius: 25px;
-}
-
-.img-active{
-    background-color: rgba(173, 173, 173, 0.541);
-    border-radius: 25px;
-}
-
-.result{
-    font-family: montserrat;
-    background-color: green;
-    margin: 10px;
-    font-size: 30px;
-    padding: 5px;
+.button:hover{
+    background-color: #08c9eb;
     color: white;
+    transition: 0.2s;
 }
-.index img{
-    padding: 0px;
-    margin: 0px;
-    height: auto;
-    width: 720px;
+
+
+
+
+/* Game Page */
+
+/* Navbar */
+.nav .button{
+    background-color: #652091;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    margin: unset;
+    font-size: 20px;
 }
-.index img:hover{
-    background-color: unset;
+.nav .button:hover{
+    background-color: #08c9eb;
+    color: black;
+    transition: 0.2s;
+    background-color: white;
 }
-.index{
-    padding-top: 5%;
-    padding-bottom:5% ;
-} */
+.nav{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .p{
+    font-size: 20px;
+    margin-left:20px;
+    font-weight: bold;
+}
+
+/* Game Field */
+.game{
+    margin: auto;
+    width: 400px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.game img{
+    padding: 10px;
+    margin: 1em;
+    width: 75px;
+    height: 75px;
+}
+.game .p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.result{
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #652091;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    margin: auto;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.player img:hover{
+    background-color: rgba(173, 173, 173, 0.541);
+    border-radius: 25px;
+}
+}
