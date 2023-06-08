@@ -7,9 +7,9 @@ function getPilihanCom(){
 
 function getHasil(pilihanPlayer,pilihanCom){
     if(pilihanPlayer==pilihanCom) return "seri";
-    if(pilihanPlayer=="batu") return (pilihanCom=="gunting")?"Player WON" : "Com WON";
-    if(pilihanPlayer=="gunting") return (pilihanCom=="kertas")?"player WON" : "Com WON";
-    if(pilihanPlayer=="kertas") return (pilihanCom=="batu")?"Player WON" : "Com WON";
+    if(pilihanPlayer=="batu") return (pilihanCom=="gunting")?"Player WON" : "Computer WON";
+    if(pilihanPlayer=="gunting") return (pilihanCom=="kertas")?"player WON" : "Computer WON";
+    if(pilihanPlayer=="kertas") return (pilihanCom=="batu")?"Player WON" : "Computer WON";
 }
 
 const pilihan = document.querySelectorAll('.player img');
