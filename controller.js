@@ -25,7 +25,7 @@ pilihan.forEach(function(pil){
         pil.style.backgroundColor = 'rgba(173, 173, 173, 0.541)';
         pil.style.borderRadius = '25px';
         
-        const pilihanPlayer = pil.className;
+        const pilihanPlayer = pil.className;        
         const pilihanCom = getPilihanCom();
         
         const imgComp = document.querySelectorAll('.computer img');
@@ -41,6 +41,10 @@ pilihan.forEach(function(pil){
         const hasil = game.getHasil()
         const result = document.querySelector('.result');
         result.innerHTML = hasil;
+
+        console.log(`Pilihan Player : ${pilihanPlayer}`);
+        console.log(`Pilihan Computer : ${pilihanCom}`);
+        console.log(`Hasil Permainan : ${hasil}`)
 
         function reset(){
             setTimeout(()=>{
