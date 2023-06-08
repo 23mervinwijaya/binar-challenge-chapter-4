@@ -4,13 +4,20 @@ function getPilihanCom(){
     if(pilihan>=0.34 && pilihan <=0.66) return "gunting";
     if(pilihan>=0.67) return "kertas";
 }
+class EndGame{
+    constructor(pilihanPlayer,pilihanCom){
+        this.pilihanPlayer = pilihanPlayer;
+        this.pilihanCom = pilihanCom;
+    }
+    getHasil(){
+        if(this.pilihanPlayer==this.pilihanCom) return "seri";
+        if(this.pilihanPlayer=="batu") return (this.pilihanCom=="gunting")?"Player WON" : "Computer WON";
+        if(this.pilihanPlayer=="gunting") return (this.pilihanCom=="kertas")?"player WON" : "Computer WON";
+        if(this.pilihanPlayer=="kertas") return (this.pilihanCom=="batu")?"Player WON" : "Computer WON";
+    }
 
-function getHasil(pilihanPlayer,pilihanCom){
-    if(pilihanPlayer==pilihanCom) return "seri";
-    if(pilihanPlayer=="batu") return (pilihanCom=="gunting")?"Player WON" : "Computer WON";
-    if(pilihanPlayer=="gunting") return (pilihanCom=="kertas")?"player WON" : "Computer WON";
-    if(pilihanPlayer=="kertas") return (pilihanCom=="batu")?"Player WON" : "Computer WON";
 }
+
 
 const pilihan = document.querySelectorAll('.player img');
 pilihan.forEach(function(pil){
@@ -20,7 +27,6 @@ pilihan.forEach(function(pil){
         
         const pilihanPlayer = pil.className;
         const pilihanCom = getPilihanCom();
-        const hasil = getHasil(pilihanPlayer,pilihanCom);
         
         const imgComp = document.querySelectorAll('.computer img');
         imgComp.forEach(function(img){
@@ -31,7 +37,8 @@ pilihan.forEach(function(pil){
                 img.style.borderRadius = '25px';
             }
         })
-
+        const game = new EndGame(pilihanPlayer,pilihanCom);
+        const hasil = game.getHasil()
         const result = document.querySelector('.result');
         result.innerHTML = hasil;
 

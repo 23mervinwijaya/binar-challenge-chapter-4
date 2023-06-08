@@ -114,6 +114,11 @@ a{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.player img:hover{
+    background-color: rgba(173, 173, 173, 0.541);
+    border-radius: 25px;
+}
+
 /* 
 
 
